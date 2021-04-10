@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.navigation.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigationview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0960bd"
+                android:orientation="vertical"
+                android:paddingBottom="19dp"
+                android:paddingLeft="19dp"
+                android:paddingTop="19dp">
+
+                <co.curesense.tb.customfonts.MyTextView_Roboto_Medium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hey!"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:visibility="gone"
+                    android:layout_height="15dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="12.3dp"
+                    android:src="@drawable/arrow_2" />
+
+                <co.curesense.tb.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="98938131311"
+                    android:textColor="#ffffff"
+                    android:textSize="11.7sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="21.7dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20.7dp"
+                    android:layout_height="22.3dp"
+                    android:layout_marginRight="36dp"
+                    android:src="@drawable/home"/>
+
+                <co.curesense.tb.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textColor="#0960bd"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f7f8ff"
+                android:orientation="horizontal"
+                android:paddingBottom="14.7dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="14.7dp">
+
+                <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tools"
+                    android:textColor="#5f6271"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gfr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="21.7dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20.7dp"
+                    android:layout_height="22.3dp"
+                    android:layout_marginRight="36dp"
+                    android:src="@drawable/calculator_1"
+                    app:tint="#34353d" />
+
+                <co.curesense.tb.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GFR Calculator"
+                    android:textColor="#34353d"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/loans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="21.7dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20.7dp"
+                    android:layout_height="22.3dp"
+                    android:layout_marginRight="36dp"
+                    android:src="@drawable/homeloadn_1"
+                     />
+
+                <co.curesense.tb.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hospitalisation Loans"
+                    android:textColor="#34353d"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/costs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="21.7dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20.7dp"
+                    android:layout_height="22.3dp"
+                    android:layout_marginRight="36dp"
+                    android:src="@drawable/rates"
+                     />
+
+                <co.curesense.tb.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hospitalisation Cost"
+                    android:textColor="#34353d"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f7f8ff"
+                android:orientation="horizontal"
+                android:paddingBottom="14.7dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="14.7dp">
+
+                <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:textColor="#5f6271"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="21.7dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20.7dp"
+                    android:layout_height="22.3dp"
+                    android:layout_marginRight="36dp"
+                    android:src="@drawable/customer"
+                     />
+
+                <co.curesense.tb.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Service"
+                    android:textColor="#34353d"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/about_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="21.7dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20.7dp"
+                    android:layout_height="22.3dp"
+                    android:layout_marginRight="36dp"
+                    android:src="@drawable/about_us"
+                     />
+
+                <co.curesense.tb.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About us"
+                    android:textColor="#34353d"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</com.google.android.material.navigation.NavigationView>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fadeScrollbars="false"
+        android:scrollbarFadeDuration="0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="100dp">
+
+                            <co.curesense.tb.customfonts.MyTextView_Roboto_Medium
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="11.7dp"
+                                android:text="Analysed Reports"
+                                android:textColor="#34353d"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="11.7dp"
+                                android:layout_marginRight="11.7dp"
+                                android:layout_marginBottom="6dp"
+                                android:background="@drawable/pich_rect"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/oral_screening"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="11.7dp">
+
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/lungs" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15.7dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+
+                                            <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                                android:id="@+id/bpm_top"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="Analysis Report:"
+                                                android:textColor="#34353d"
+                                                android:textSize="16sp" />
+
+
+                                            <ImageView
+                                                android:layout_width="15dp"
+                                                android:layout_height="15dp"
+                                                android:layout_marginTop="10dp"
+                                                android:src="@drawable/next" />
+                                        </LinearLayout>
+
+
+                                        <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                            android:id="@+id/report_data"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Report Data "
+                                            android:textColor="#878787"
+                                            android:textSize="14.7dp" />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#e0d8d8" />
+
+                            </LinearLayout>
+
+                            <co.curesense.tb.customfonts.MyTextView_Roboto_Medium
+                                android:id="@+id/capture"
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:background="@drawable/sign_up"
+                                android:gravity="center"
+                                android:padding="12dp"
+                                android:text="Send Bio-Market Reports to Doctor"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp" />
+
+                            <co.curesense.tb.customfonts.MyTextView_Roboto_Medium
+                                android:id="@+id/ar_eye"
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:background="@drawable/sign_up"
+                                android:gravity="center"
+                                android:layout_margin="8dp"
+                                android:padding="12dp"
+                                android:text="Find TB Specific Hospitals on AR"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp" />
+
+                            <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                android:id="@+id/report_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="11.7dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginRight="11.7dp"
+                                android:letterSpacing="0.00775"
+                                android:maxLines="3"
+                                android:text="Our screening reports are are meant for first screening assessment, users are advised to visit regular checkup at your nearest diagnostic centers."
+                                android:textColor="#5f6271"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

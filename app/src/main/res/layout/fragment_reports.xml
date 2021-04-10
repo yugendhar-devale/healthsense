@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/toolbar"
+        android:fadeScrollbars="false"
+        android:scrollbarFadeDuration="0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="100dp">
+
+                            <co.curesense.tb.customfonts.MyTextView_Roboto_Medium
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="11.7dp"
+                                android:text="Latest Reports Generated"
+                                android:textColor="#34353d"
+                                android:textSize="15sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="11.7dp"
+                                android:layout_marginRight="11.7dp"
+                                android:layout_marginBottom="6dp"
+                                android:background="@drawable/pich_rect"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone"
+                                    android:padding="11.7dp">
+
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/lungs" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15.7dp"
+                                        android:orientation="vertical">
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="4dp"
+                                            android:orientation="horizontal">
+
+                                            <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="TB Screening Reports: Feb 28th, 2018 "
+                                                android:textColor="#34353d"
+                                                android:textSize="16sp" />
+
+
+                                            <ImageView
+                                                android:layout_width="15dp"
+                                                android:layout_height="15dp"
+                                                android:layout_marginTop="10dp"
+                                                android:src="@drawable/next" />
+
+                                        </LinearLayout>
+
+
+                                        <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Click here to know full reports of your TB screening."
+                                            android:textColor="#878787"
+                                            android:textSize="14.7dp" />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#e0d8d8" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="11.7dp">
+
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/lungs" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15.7dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+
+                                            <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="Next Screening On: Jan 22nd, 2021"
+                                                android:textColor="@color/yellow"
+                                                android:textSize="16sp" />
+
+
+                                            <ImageView
+                                                android:layout_width="15dp"
+                                                android:layout_height="15dp"
+                                                android:layout_marginTop="10dp"
+                                                android:visibility="gone"
+                                                android:src="@drawable/next" />
+                                        </LinearLayout>
+
+
+                                        <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="In last TB screening, we sensed mild wet cough during voice bio-marker analysis. Please repeat the test after 3 days."
+                                            android:textColor="#878787"
+                                            android:textSize="14.7dp" />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"
+                                android:background="#f7f7f7" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"
+                                android:background="#f7f7f7" />
+
+                            <co.curesense.tb.customfonts.MyTextView_Roboto_Medium
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="11.7dp"
+                                android:text="Nearby Diagnostic Centers"
+                                android:textColor="#34353d"
+                                android:textSize="15sp" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <!--<fragment
+                                    android:id="@+id/googleMap"
+                                    android:name="com.google.android.gms.maps.MapFragment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="159.7dp" />-->
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|bottom"
+                                    android:layout_marginRight="3.3dp"
+                                    android:layout_marginBottom="11dp"
+                                    app:cardCornerRadius="12dp"
+                                    app:cardElevation="2dp">
+
+                                    <co.curesense.tb.customfonts.MyTextView_Roboto_Medium
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="5.7dp"
+                                        android:paddingTop="3.5dp"
+                                        android:paddingRight="5.7dp"
+                                        android:paddingBottom="3.5dp"
+                                        android:text="Tap to view on Map"
+                                        android:textColor="#5f6271"
+                                        android:textSize="10.7sp" />
+
+                                </androidx.cardview.widget.CardView>
+
+                            </FrameLayout>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:cardElevation="0dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/recyclerview5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="13.3dp">
+
+
+                                    </androidx.recyclerview.widget.RecyclerView>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="19dp"
+                                        android:layout_marginTop="19dp"
+                                        android:layout_marginRight="19dp"
+                                        android:layout_marginBottom="16.7dp"
+                                        android:orientation="horizontal">
+
+                                        <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Rajeshwari Diagnostic Center"
+                                            android:textColor="#5f6271"
+                                            android:textSize="15sp" />
+
+                                        <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0.5 km"
+                                            android:textColor="#5f6271"
+                                            android:textSize="15sp" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="19dp"
+                                        android:layout_marginRight="19dp"
+                                        android:layout_marginBottom="16.7dp"
+                                        android:orientation="horizontal">
+
+                                        <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="NTB Hospital"
+                                            android:textColor="#5f6271"
+                                            android:textSize="15sp" />
+
+                                        <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="5.0 km"
+                                            android:textColor="#5f6271"
+                                            android:textSize="15sp" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="19dp"
+                                        android:layout_marginRight="19dp"
+                                        android:layout_marginBottom="16.7dp"
+                                        android:orientation="horizontal">
+
+                                        <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Columbia Hospital"
+                                            android:textColor="#5f6271"
+                                            android:textSize="15sp" />
+
+                                        <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="8.0 km"
+                                            android:textColor="#5f6271"
+                                            android:textSize="15sp" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"
+                                android:background="#f7f7f7" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"
+                                android:background="#f7f7f7" />
+
+                            <co.curesense.tb.customfonts.MyTextView_Roboto_Medium
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="11.7dp"
+                                android:text="Help"
+                                android:textColor="#34353d"
+                                android:textSize="16sp" />
+
+                            <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                android:id="@+id/some_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="11.7dp"
+                                android:layout_marginRight="11.7dp"
+                                android:letterSpacing="0.00775"
+                                android:maxLines="3"
+                                android:text="Here you can find all the screening reports from our automated CureSense moderated by expert doctors. These are just screening test reports for taking early precautions and should not be used for treatment purpose."
+                                android:textColor="#5f6271"
+                                android:textSize="14sp" />
+
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:cardElevation="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+
+            <co.curesense.tb.customfonts.MyTextView_Roboto_Medium
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.3dp"
+                android:layout_weight="1"
+                android:background="@drawable/sign_up"
+                android:gravity="center"
+                android:paddingLeft="27.7dp"
+                android:paddingTop="11.7dp"
+                android:paddingRight="27.7dp"
+                android:paddingBottom="11.7dp"
+                android:text="Add Custom Report"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

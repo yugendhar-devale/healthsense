@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fadeScrollbars="false"
+        android:scrollbarFadeDuration="0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="100dp">
+
+                            <co.curesense.tb.customfonts.MyTextView_Roboto_Medium
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="11.7dp"
+                                android:text="Audio Input"
+                                android:textColor="#34353d"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="11.7dp"
+                                android:layout_marginRight="11.7dp"
+                                android:layout_marginBottom="6dp"
+                                android:background="@drawable/pich_rect"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/oral_screening"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="11.7dp">
+
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/lungs" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15.7dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+
+                                            <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="Step 1:"
+                                                android:textColor="#34353d"
+                                                android:textSize="16sp" />
+
+
+                                            <ImageView
+                                                android:layout_width="15dp"
+                                                android:layout_height="15dp"
+                                                android:layout_marginTop="10dp"
+                                                android:src="@drawable/next" />
+                                        </LinearLayout>
+
+
+                                        <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Press the Start Recording button below and start to cough for 10 to 20 seconds till you get a confirmation. Make sure to conduct this screening in noise free environment."
+                                            android:textColor="#878787"
+                                            android:textSize="14.7dp" />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#e0d8d8" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"
+                                android:background="#f7f7f7" />
+
+                            <co.curesense.tb.customfonts.MyTextView_Roboto_Medium
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="11.7dp"
+                                android:text="STEPS 1: "
+                                android:textColor="#34353d"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="11.7dp"
+                                android:layout_marginRight="11.7dp"
+                                android:background="@drawable/pich_rect"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/record"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="11.7dp">
+
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/audio" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15.7dp"
+                                        android:orientation="vertical">
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="4dp"
+                                            android:orientation="horizontal">
+
+                                            <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="Start Recording"
+                                                android:textColor="#34353d"
+                                                android:textSize="16sp" />
+
+
+                                            <ImageView
+                                                android:layout_width="15dp"
+                                                android:layout_height="15dp"
+                                                android:layout_marginTop="10dp"
+                                                android:src="@drawable/next" />
+
+                                        </LinearLayout>
+
+
+                                        <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Your coughing sound will be recorded for 10 to 20 seconds. "
+                                            android:textColor="#878787"
+                                            android:textSize="14.7dp" />
+
+
+                                        <rm.com.audiowave.AudioWaveView
+                                            android:id="@+id/wave"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="32dp"
+                                            android:layout_margin="16dp"
+                                            app:animateExpansion="true"
+                                            app:chunkHeight="24dp"
+                                            app:chunkRadius="1dp"
+                                            app:chunkSpacing="1dp"
+                                            app:chunkWidth="3dp"
+                                            app:minChunkHeight="2dp"
+                                            app:touchable="true"
+                                            app:waveColor="@color/colorPrimary" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#e0d8d8" />
+
+                                <LinearLayout
+                                    android:id="@+id/process"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="11.7dp">
+
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/audio" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15.7dp"
+                                        android:orientation="vertical">
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="4dp"
+                                            android:orientation="horizontal">
+
+                                            <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="Spectrum Analysis"
+                                                android:textColor="#34353d"
+                                                android:textSize="16sp" />
+
+
+                                            <ImageView
+                                                android:layout_width="15dp"
+                                                android:layout_height="15dp"
+                                                android:layout_marginTop="10dp"
+                                                android:src="@drawable/next" />
+
+                                        </LinearLayout>
+
+
+                                        <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Please wait we are analysis for the result."
+                                            android:textColor="#878787"
+                                            android:textSize="14.7dp" />
+
+                                        <co.curesense.tb.utils.VisualizerView
+                                            android:id="@+id/visualizer"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="200dp" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <co.curesense.tb.customfonts.MyTextView_Roboto_Medium
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="11.7dp"
+                                android:text="Spectrum Visualizer Advanced"
+                                android:textColor="#34353d"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="11.7dp"
+                                android:layout_marginRight="11.7dp"
+                                android:layout_marginBottom="6dp"
+                                android:background="@drawable/pich_rect"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/spectrum_visualizer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="11.7dp">
+
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/audio" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15.7dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+
+                                            <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="Open Audio Spectrum Visualiser"
+                                                android:textColor="#34353d"
+                                                android:textSize="16sp" />
+
+
+                                            <ImageView
+                                                android:layout_width="15dp"
+                                                android:layout_height="15dp"
+                                                android:layout_marginTop="10dp"
+                                                android:src="@drawable/next" />
+                                        </LinearLayout>
+
+
+                                        <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="All the audio processing happening in the server side. For demo purpose to see how Spectrum Analyser looks like, click this."
+                                            android:textColor="#878787"
+                                            android:textSize="14.7dp" />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#e0d8d8" />
+
+                            </LinearLayout>
+
+                            <co.curesense.tb.customfonts.TextViewSFProDisplayRegular
+                                android:id="@+id/report_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="11.7dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginRight="11.7dp"
+                                android:letterSpacing="0.00775"
+                                android:maxLines="3"
+                                android:text="Our screening reports are generated within 10 seconds, and are ready to be sent to doctor for reviewing."
+                                android:textColor="#5f6271"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

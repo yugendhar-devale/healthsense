@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_below="@+id/tagline"
+            android:layout_height="120dp"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo_sense" />
+
+        <co.curesense.tb.customfonts.EditText_Roboto_Regular
+            android:id="@+id/email"
+            android:layout_below="@+id/logo"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:padding="8dp"
+            android:text="hi@spacenos.com"
+            android:background="#d3d3d3"
+            android:hint="Email"/>
+
+        <co.curesense.tb.customfonts.EditText_Roboto_Regular
+            android:id="@+id/password"
+            android:layout_below="@+id/email"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Test1234!"
+            android:textSize="15sp"
+            android:background="#d3d3d3"
+            android:padding="8dp"
+            android:hint="Password"/>
+
+        <co.curesense.tb.customfonts.MyTextView_Roboto_Regular
+            android:id="@+id/tagline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:padding="16dp"
+            android:text="Pocket Health Screening and Prevention Assistant."
+            android:textAlignment="center"
+            android:textColor="#5f6271"
+            android:textSize="18dp"
+            android:gravity="center_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <co.curesense.tb.customfonts.Button_Roboto_Medium
+                android:id="@+id/skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="28dp"
+                android:background="@drawable/login_rect"
+                android:paddingLeft="52.2dp"
+                android:paddingTop="12.7dp"
+                android:paddingRight="52.2dp"
+                android:paddingBottom="12.7sp"
+                android:text="Forget Password"
+                android:textAllCaps="false"
+                android:textColor="#0960bd"
+                android:textSize="15sp" />
+
+            <co.curesense.tb.customfonts.Button_Roboto_Medium
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sign_up"
+                android:paddingLeft="52.2dp"
+                android:paddingTop="12.7dp"
+                android:paddingRight="52.2dp"
+                android:paddingBottom="12.7sp"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
